@@ -1,0 +1,47 @@
+body {
+    position: absolute
+}
+
+h1 {
+    text-align: center;
+    color: blue
+}
+
+th, td {
+    width: 180px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+table {
+    padding: 30px;
+    border-collapse: collapse;
+}
+
+#header1 {
+    background: yellow;
+    border: 2px solid black;
+}
+
+#header2 {
+    background: orange;
+    border: 2px solid black
+}
+
+.inforright {
+    text-align: right;
+    color: blue;
+    padding-right: 50px;
+    border: none;
+}
+
+.inforleft {
+    text-align: left;
+    color: blue;
+    padding-left: 50px;
+    border: none;
+}
+
+.textcenter {
+    text-align: center;
+}
