@@ -1,0 +1,15 @@
+th {
+    background: #ff6200;
+    color: white;
+    height: 30px;
+    width: 130px;
+}
+
+td {
+    height: 30px;
+    width: 130px;
+    color: red;
+}
+.header{
+    color: blue;
+}

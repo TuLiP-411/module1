@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<form action="/action_page.php" method="get">
+<table>
+    <tr>
+        <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+    </tr>
+    <tr>
+        <td class="header"> Họ và tên </td>
+        <td colspan="3">  <input type="text" name="yourname"></td>
+    </tr>
+    <tr>
+        <td class="header"> Email </td>
+        <td colspan="3">  <input type="text" name="email"></td>
+    </tr>
+    <tr>
+        <td class="header">Sở thích</td>
+        <td><label> <input type="checkbox" name="hobby" value="sport">Thể thao</label></td>
+        <td><label> <input type="checkbox" name="hobby" value="music">Âm nhạc </label></td>
+        <td><label> <input type="checkbox" name="hobby" value="reading">Đọc sách</label></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label> <input type="checkbox" name="hobby" value="web">Lướt web</label></td>
+        <td><label> <input type="checkbox" name="hobby" value="game">Chơi game </label></td>
+        <td><label> <input type="checkbox" name="hobby" value="movie">Điện ảnh</label></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label> <input type="checkbox" name="hobby" value="travel">Du lịch</label></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button type="submit">Gửi thông tin</button></td>
+        <td><button type="reset">Nhập lại</button></td>
+        <td></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

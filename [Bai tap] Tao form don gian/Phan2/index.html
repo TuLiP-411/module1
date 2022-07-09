@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple form 2</title>
+    <style>
+        #header {
+            background-color: aqua;
+            color: blue
+        }
+
+        th, td {
+            height: 30px;
+            width: 130px
+        }
+
+        table {
+            padding-left: 30px;
+            background-color: #f8f8b8;
+        }
+    </style>
+</head>
+<body>
+<form action="/action_page.php" method="post">
+    <table>
+        <tr>
+            <td ID="header" colspan="4">ĐĂNG KÝ HỌC VIÊN</td>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td colspan="2"><input type="text" name="name"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td colspan="2"><input type="text" name="dob" required></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td><label><input type="radio" name="gender" value="male">Nam</label></td>
+            <td><label><input type="radio" name="gender" value="female">Nữ</label></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td colspan="3"><textarea name="address" cols="20" rows="4"></textarea></texta></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td colspan="2">
+                <select name="class">
+                    <option value="default">---Chọn lớp---</option>
+                    <option value="1">Lớp 1</option>
+                    <option value="2">Lớp 2</option>
+                    <option value="3">Lớp 3</option>
+                </select>
+            </td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td colspan="2"><input type="text" name="email"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td colspan="2"><input type="text" name="phone"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Đăng ký</button>
+            </td>
+            <td>
+                <button type="reset">Nhập lại</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
