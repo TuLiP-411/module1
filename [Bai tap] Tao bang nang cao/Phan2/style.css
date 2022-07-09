@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    position: center;
+}
+
+td {
+    height: 40px;
+    width: 80px;
+    border: solid darkgrey 1px;
+    text-align: center
+}
+sub{color: black}
+.headervn{background: orange;border-color: white;color: white}
+.headereng{border: none;text-align: center}
+.sun{color: red}
+.sat{color: blue}

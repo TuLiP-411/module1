@@ -1,0 +1,24 @@
+table, th, td {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: orange;
+    padding: 25px;
+}
+
+td {
+    height: 75px;
+    width: 75px;
+}
+
+.chess-board {
+    border: 1px solid black;
+}
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: #000000;
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: #000000;
+}
