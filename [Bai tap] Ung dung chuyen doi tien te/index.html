@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        td, th {
+            height: 30px;
+            width: 250px
+        }
+    </style>
+    <title>Currency Converter</title>
+
+</head>
+<body>
+<h2>Currency Converter</h2>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="amount"></td>
+        <td><select id="from">
+            <option value="1">VND (Vietnam Dong)</option>
+            <option value="23000">USD (US Dollar)</option>
+        </select></td>
+        <td><select id="to">
+            <option value="23000">USD (US Dollar)</option>
+            <option value="1">VND (Vietnam Dong)</option>
+        </select></td>
+        <td>
+            <button onclick="convert()">Convert</button>
+        </td>
+    </tr>
+</table>
+<div id="mesDiv"></div>
+</body>
+<script src="script.js"></script>
+</html>
