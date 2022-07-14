@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt('Nhập mức doanh số (đơn vị nghìn đồng):')
+    let rate;
+    //Cách tính hoa hồng theo nấc bậc thang
+    // Từ 0 đến 300.000 => 3%
+    // Từ 300.000 đến 500.000 => 4%
+    // Trên 500.000 =>  6%
+    if (a <= 300000) {
+        rate = a * (3 / 100)
+    } else if (a <= 500000) {
+        rate = (300000 * (3 / 100)) + ((a - 300000) * (4 / 100));
+    } else {
+        rate = (300000 * (3 / 100)) + ((500000 - 300000) * (4 / 100)) + ((a - 500000) * (6 / 100));
+    }
+    alert("Tiền hoa hồng là: " + rate + "đồng")
+</script>
+</html>

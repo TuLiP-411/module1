@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai5</title>
+</head>
+<body>
+<script>
+  let midTerm = Number(prompt("Moi nhap diem giua ky"));
+  let final = Number(prompt("Moi nhap diem cuoi ky"));
+  let average = (midTerm + final*2)/3;
+  if (average<5){
+    alert("Khong dat");
+  }
+  else {
+    if (average<7){
+      alert("Dat");
+    }
+    else {
+      if (average<9){
+        alert("Tot")
+      }
+      else {
+        alert("Xuat sac");
+      }
+    }
+  }
+</script>
+</body>
+</html>
