@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Length converter</title>
+</head>
+<body>
+<h2>Length Unit Converter</h2>
+<input type="number" id="from" oninput="convert()" onfocus="this.value=''">
+<select name="fromUnit" id="fromUnit" onchange="convert()">
+    <option value="0.305">Meter</option>
+    <option value="3.279">Foot</option>
+</select>
+<p>equivalent to </p>
+<input type="text" id="to" readonly>
+<select name="toUnit" id="toUnit" onchange="convert()">
+    <option value="0.305">Meter</option>
+    <option value="3.279">Foot</option>
+</select>
+</body>
+<script src="script.js"></script>
+</html>
