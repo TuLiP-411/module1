@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function compareNum(a, b, c) {
+        let max = a;
+        if (a > b && a > c) {
+            max = a;
+        } else if (b > c) {
+            max = b;
+        } else max = c;
+        return max;
+    }
+
+    let a = +prompt("Nhập số nguyên a bất kì: ");
+    let b = +prompt("Nhập số nguyên b bất kì: ");
+    let c = +prompt("Nhập số nguyên c bất kì: ");
+    let result = compareNum(a, b, c);
+    alert("Số lớn nhất trong 3 số " + a + ", " + b + ", " + c + " là " + result)
+</script>
+</html>

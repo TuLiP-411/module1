@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let radius = +prompt("Nhap vao ban kinh: ")
+
+    function calculateArea(radius) {
+        let area = radius * radius * Math.PI;
+        return area;
+    }
+
+    function calculatePerimeter(radius) {
+        let per = (radius * 2) * Math.PI;
+        return per;
+    }
+
+    let area = calculateArea(radius);
+    let per = calculatePerimeter(radius);
+    document.write("Bán kính hình tròn là: " + radius + "<br>Diện tích hình tròn là: " + area + "<br> Chu vi hình tròn là: " + per)
+</script>
+</html>

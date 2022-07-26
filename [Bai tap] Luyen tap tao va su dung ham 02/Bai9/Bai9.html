@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = ["code", "gym", "My", "Dinh", "Ham", "Nghi"]
+
+    function checkAvailable(char) {
+        let count = 0;
+        let str = arr.toString()
+        let newarr = str.split("")
+        for (let i = 0; i < newarr.length; i++) {
+            if (char == newarr[i]) {
+                count++
+            }
+        }
+        return count
+    }
+
+    let char = prompt("Nhập ký tự bất kì: ")
+    let result = checkAvailable(char)
+    alert(char + " xuất hiện " + result + " lần")
+</script>
+</html>
