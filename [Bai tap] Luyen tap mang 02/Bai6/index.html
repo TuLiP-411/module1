@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = prompt("Nhập số ký tự của mảng: ")
+    let count = 1;
+    let arr = [];
+    while (count <= a) {
+        arr.push(prompt("Nhập ký tự thứ" + count + "của mảng"))
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == "-") {
+            arr[i] = "_";
+        }
+    }
+    console.log(arr)
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = prompt("Nhập số phần tử của mảng: ")
+    let count = 1;
+    let arr = [];
+    let countNum = 0;
+    while (count <= a) {
+        arr.push(+prompt("Nhập phần tử thứ " + count + " của mảng"))
+        count++
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (Number.isNaN(arr[i]) == false) {
+            countNum++
+        }
+    }
+    alert("Mảng có " + countNum + " ký tự số")
+</script>
+</html>
