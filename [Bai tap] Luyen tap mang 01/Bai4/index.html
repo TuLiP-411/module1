@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check array</title>
+</head>
+<body>
+<p>Nhập số để thêm vào mảng. Sau đó đảo ngược mảng</p>
+<input type="text" onfocus="this.value=''" id="input">
+<button onclick="add()">Add</button>
+<button onclick="reverse()">Reverse</button>
+<p id="infor"></p>
+<p id="infor2"></p>
+
+</body>
+<script>
+    let arr = []
+    let sum = 0
+
+    function add() {
+        let a = document.getElementById("input").value
+        arr.push(a)
+        document.getElementById('infor').innerHTML = "Mảng đã nhập: " + arr
+    }
+
+    console.log(arr)
+
+    function reverse() {
+        let arr1 = arr.reverse()
+        document.getElementById('infor2').innerHTML = "Mảng đã đảo ngược: " + arr1
+    }
+</script>
+</html>

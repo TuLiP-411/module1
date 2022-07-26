@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function addArr1() {
+        let count = 1;
+        let arr1 = [];
+        while (count <= 10) {
+            arr1.push(prompt("Mảng a. Nhập vào phần tử thứ " + count));
+            count++
+        }
+        console.log(arr1)
+        return arr1;
+    }
+
+    function addArr2() {
+        let count = 1;
+        let arr2 = [];
+        while (count <= 10) {
+            arr2.push(prompt("Mảng b. Nhập vào phần tử thứ " + count));
+            count++
+        }
+        console.log(arr2)
+        return arr2;
+    }
+
+    let arr1 = addArr1();
+    let arr2 = addArr2();
+    let arr3 = arr1.join(arr2);
+    alert(arr3)
+</script>
+</html>

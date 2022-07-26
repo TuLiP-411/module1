@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>Nhập số để thêm vào mảng</p>
+<input type="text" onfocus="this.value=''" id="input">
+<button onclick="add()">Add</button>
+<button onclick="check()">Check</button>
+<p id="infor"></p>
+</body>
+<script>
+    let arr = []
+    let count = 0
+    let result = []
+
+    function add() {
+        let a = document.getElementById("input").value
+        arr.push(a)
+    }
+
+    console.log(arr)
+
+    function check() {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                result.push(arr[i])
+                count++
+            }
+        }
+        document.getElementById("infor").innerHTML = "Có " + count + " số nguyên lớn hơn hoặc bằng 10" + "<br>" + "Đó là các số: " + result.join()
+    }
+</script>
+</html>

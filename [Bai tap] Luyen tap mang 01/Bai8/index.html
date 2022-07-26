@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+
+</body>
+<script>
+    function add() {
+        let count = 1;
+        let arr = [];
+        while (count <= 10) {
+            arr.push(prompt("Nhập vào phần tử thứ " + count));
+            count++
+        }
+        return arr;
+    }
+
+    function sort(arr) {
+        arr.sort(function (a, b) {
+            return b - a
+        });
+        alert("mảng đã sắp xếp giảm dần là: " + arr
+        )
+    }
+
+    let arr = new add();
+    sort(arr)
+</script>
+</html>

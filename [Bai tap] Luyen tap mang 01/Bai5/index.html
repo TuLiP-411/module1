@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check array</title>
+</head>
+<body>
+<p>Nhập chuỗi số ngăn cách nhau bằng dấu phẩy. Chương trình sẽ thông báo số số nguyên âm có trong chuỗi</p>
+<input type="text" onfocus="this.value=''" id="input">
+<button onclick="check()">Check</button>
+<p id="infor"></p>
+</body>
+<script>
+    function check() {
+        let a = document.getElementById("input").value
+        let arr = a.split(",")
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (Number.isInteger(Number(arr[i])) == true && Number(arr[i]) < 0) {
+                count++
+
+            }
+        }
+
+        document.getElementById("input").value = "";
+        document.getElementById("infor").innerHTML = "Trong mảng có " + count + " phần tử là số nguyên âm"
+    }
+
+
+</script>
+</html>
