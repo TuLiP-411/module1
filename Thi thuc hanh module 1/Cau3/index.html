@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3</title>
+</head>
+<body>
+
+</body>
+<script>
+    function checkPrime(n) {
+        let isPrime = true;
+        //Check giá trị với 2
+        if (n < 2) {
+            isPrime = false;
+        } else if (n === 2) {
+            isPrime = true;
+        } else if (n % 2 === 0) {
+            isPrime = false;
+        } else
+            //check số lẻ
+            for (let i = 3; i < (n / 2); i += 2) {
+                if (n % i === 0) {
+                    isPrime = false
+                    break;
+                }
+            }
+        return isPrime;
+    }
+
+    function sumOfListPrime(x) {
+        let sum = 0;
+        for (let i = 0; i <= x; i++) {
+            let result = checkPrime(i)
+            if (result == true) {
+                console.log(i);
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
+    let x = prompt("Hãy nhập vào một số nguyên x , chương trình sẽ trả về giá trị là tổng các số nguyên tố từ 0 cho tới x");
+    let sumPrime = sumOfListPrime(x);
+    document.write("Tổng các số nguyên tố từ 0 đến " + x + " là: " + sumPrime);
+
+</script>
+</html>

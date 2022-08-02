@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau1</title>
+</head>
+<body>
+
+</body>
+<script>
+    function findAvg(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        let avr = sum / arr.length;
+        return avr;
+    }
+
+    let score = [10, 3, 4, 7, 6, 5, 2];
+    let result = findAvg(score);
+    console.log(result);
+
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 2</title>
+</head>
+<body>
+
+</body>
+<script>
+    function insertNumberToArray(arr, x, index) {
+        if (index < 0 || index > arr.length) {
+            return arr;
+        } else {
+            //Dich cac phan tu tu index tro di 1 vi tri
+            for (let i = arr.length - 1; i >= index - 1; i--) {
+                arr[i + 1] = arr[i];
+            }
+            //Chen x vao index
+            arr[index] = x;
+            return arr;
+        }
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let x = 0;
+    let index = 5;
+    let result = insertNumberToArray(arr, x, index);
+    document.write(result)
+</script>
+</html>
